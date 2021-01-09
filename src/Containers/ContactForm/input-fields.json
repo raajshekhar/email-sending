@@ -1,0 +1,75 @@
+{
+    "contact": [{
+      "name": "email",
+      "id": "email",
+      "type": "email",
+      "placeholder": "",
+      "maxLength": "150",
+      "value": "",
+      "readOnly": false,
+      "colLength": "col-12",
+      "labelName": "Email Address",
+      "restrictions": [],
+      "popOverPlacement": ["bottom", "bottom"],
+      "autoComplete": "off",
+      "labelImp": true,
+      "validations": [
+        {
+          "type": "required",
+          "params": ["Please Enter Email Address"]
+        },
+        {
+          "type": "email",
+          "params": ["please enter a valid Email Address"]
+        }
+      ]
+  },{
+        "name": "subject",
+        "id": "subject",
+        "type": "text",
+        "placeholder": "",
+        "maxLength": "150",
+        "value": "",
+        "readOnly": false,
+        "colLength": "col-12",
+        "labelName": "Subject",
+        "restrictions": ["numbers", "left-space", "special-characters"],
+        "popOverPlacement": ["bottom", "bottom"],
+        "autoComplete": "off",
+        "labelImp": true,
+        "validations": [
+            {
+                "type": "min",
+                "params": [3, "Subject cannot be less than 3 characters"]
+            },
+            {
+              "type": "required",
+              "params": ["Please Enter Subject"]
+            }
+          ]
+    },{
+      "name": "message",
+      "id": "message",
+      "type": "textarea",
+      "rows": 5,
+      "placeholder": "",
+      "maxLength": "500",
+      "value": "",
+      "readOnly": false,
+      "colLength": "col-12",
+      "labelName": "Message",
+      "restrictions": ["left-space"],
+      "popOverPlacement": ["bottom", "bottom"],
+      "autoComplete": "off",
+      "validations": [
+        {
+            "type": "min",
+            "params": [3, "Message cannot be less than 3 characters"]
+        },
+        {
+          "type": "required",
+          "params": ["Please Enter Message"]
+        }
+      ]
+  }]
+}

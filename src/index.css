@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.error-icon, .success-icon {
+  position: absolute;
+  right: 0;
+  display: flex;
+  margin: 6px;
+  border-radius: 100%;  
+}
+.error-icon {
+  background: red;
+}
+.success-icon {
+  background: green;
+}
+.send-order-request span {
+  font-size: 15px;
+  color: #ccc;
+  margin-left: 10px;
+}
